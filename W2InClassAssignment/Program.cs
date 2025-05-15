@@ -20,6 +20,12 @@ class Program
             X = x;
             Y = y;
         }
+
+        public override string ToString()
+        {
+            // use string interpolation to print Point
+            return $"({X},{Y})";
+        }
     }
 
 }
