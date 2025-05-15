@@ -4,8 +4,13 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Point 
         Point p = new Point(1, 2);
-        var str = p.ToString();
-        Console.WriteLine(str);
+        Console.WriteLine(p.ToString());
+        
+        //Book
+        Book b = new Book("Silmarillion", "J.R.R Tolkien", 1977);
+        
+        b.DisplayInfo();
     }
 }
