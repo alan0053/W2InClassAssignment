@@ -8,5 +8,18 @@ class Program
         var str = p.ToString();
         Console.WriteLine(str);
     }
-    
+
+    class Point
+    {
+        public int X;
+        public int Y;
+
+
+        public Point(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+    }
+
 }
