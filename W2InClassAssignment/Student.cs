@@ -12,7 +12,7 @@ public class Student
 
         set
         {
-            if (value >= 0 && value <= 100)
+            if (value is >= 0 and <= 100)
             {
                 _grade = value; 
             }
@@ -41,4 +41,6 @@ public class Student
     {
         return $"Name: {StudentName}, Grade: {Grade}";
     }
+    
+    
 }
