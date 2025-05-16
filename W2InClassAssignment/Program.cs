@@ -53,5 +53,23 @@ class Program
         Console.WriteLine(c.ToString());
         c.Describe();
         Console.WriteLine("\n//////////////////\n");
+
+        static int CountVowels(string input)
+        {
+            char[] characters = input.ToCharArray();
+            int count = 0;
+
+            foreach (char c in characters)
+            {
+                if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+        
+         var a = CountVowels("aaa");
+         Console.WriteLine(a.ToString());
     }
 }
